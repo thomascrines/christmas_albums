@@ -23,7 +23,7 @@ var populateListOfTitles = function(list, fullList) {
     var li = document.createElement('li');
     var a = document.createElement( 'a' );
     var img = document.createElement('img');
-    img.src = fullList.albums.items[i].images[1].url;
+    img.src = fullList.albums.items[i].images[0].url;
     a.innerText = fullList.albums.items[i].name + ' by ' + fullList.albums.items[i].artists[0].name;
     a.setAttribute('href', fullList.albums.items[i].external_urls.spotify);
     li.appendChild( a );
