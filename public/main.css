@@ -1,15 +1,39 @@
-@import url(https://fonts.googleapis.com/css?family=Sarina);
+@import url(https://fonts.googleapis.com/css?family=Changa+One|Pacifico);
 
+body {
+background-color: green;
+}
 main{
   width: 700px;
   margin: 0 auto;
-  font-family: 'Sarina', cursive;
+  font-family: 'Pacifico', cursive;
   text-align: center;
   font-size: 20px;
-  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
-  transform: rotate(-6deg);
-  margin: 8px 0px;
+  background-color: tomato;
 }
+
+h2 {
+  font-family: 'Pacifico';
+  color: white;
+  font-size: 60px;
+  transform: rotate(-7deg);
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: yellow;
+}
+
+#albums {
+padding:0;
+margin:0;
+list-style-type:none;
+}
+
 .album{
   padding: 5px;
 }

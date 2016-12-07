@@ -20,15 +20,15 @@ var requestComplete = function() {
 
 var populateListOfTitles = function(list, fullList) {
   for (var i = 0; i < fullList.albums.items.length; i++) {
-    var listItem = document.createElement('li');
-    var listLink = document.createElement( 'a' );
-    var imageItem = document.createElement('img');
-    imageItem.src = fullList.albums.items[i].images[2].url;
-    listLink.innerText = fullList.albums.items[i].name + ' by ' + fullList.albums.items[i].artists[0].name;
-    listLink.setAttribute('href', fullList.albums.items[i].external_urls.spotify);
-    listItem.appendChild( listLink );
-    list.append(listItem);
-    list.append(imageItem);
+    var li = document.createElement('li');
+    var a = document.createElement( 'a' );
+    var img = document.createElement('img');
+    img.src = fullList.albums.items[i].images[1].url;
+    a.innerText = fullList.albums.items[i].name + ' by ' + fullList.albums.items[i].artists[0].name;
+    a.setAttribute('href', fullList.albums.items[i].external_urls.spotify);
+    li.appendChild( a );
+    list.append(img);
+    list.append(li);
 }
 }
 
